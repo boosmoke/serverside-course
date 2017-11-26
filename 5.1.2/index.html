@@ -1,0 +1,31 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Webbutveckling-Serversidan</title>                  
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0" />
+</head>
+
+<body>
+	<!-- container -->
+	<div class="container">
+	<h1>HTML</h1>
+    <form method="post" action="exempel.php" enctype="multipart/form-data">
+       <table>
+           <tr><td>Från:</td><td><input type="text" name="from"/></td></tr>
+           <tr><td>Till:</td><td><input type="text" name="to"/></td></tr>
+           <tr><td>Cc:</td><td><input type="text" name="cc"/></td></tr>
+           <tr><td>Bcc:</td><td><input type="text" name="bcc"/></td></tr>
+           <tr><td>Ärende:</td><td><input type="text" name="subject"/></td></tr>
+           <tr><td>Fil 1</td><td><input type="file" name="file1"></td></tr>
+           <tr><td>Fil 2</td><td><input type="file" name="file2"></td></tr>
+           <tr><td>Meddelande:</td><td><textarea name="message" rows="5" cols="15"></textarea></td></tr>
+           <tr><td>Lösenord:</td><td><input type="text" name="password"/></td></tr>
+           <tr><td><input type="submit" value="Skicka" name="send_button"/></td></tr>
+       </table>
+    </form>
+	</div><!-- /container -->
+</body>
+
+</html>

@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <!-- HEADER INFORMATION -->
+  <meta charset="utf-8">
+  <title>Kameleo</title>
+  <meta name="description" content="Kameleo Webbyrå">
+  <meta name="author" content="John Lybeck">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<!-- HEADER INFORMATION ENDS -->
+<body>
+  <!-- MIN VÄDER -->
+  <div id="weather">
+    <div id="click-weather">
+        <p>Longboard Väder</p>
+        <div class="image"></div>
+        <span class="temp"></span>
+        <span class="location"></span>
+      </div>
+      <div class="currentMeasure">
+        <span class="measure" data-type="metric">&#8451;</span>
+        <span class="measure" data-type="imperial">&#8457;</span>
+      </div> 
+  </div>
+  <!-- ANCHOR LINK TAG -->
+  <div id="top"><div id="toTop">&#10095;</div></div>
+  <!-- NAV BEGINS -->
+  <nav>
+    <ul>
+      <li><a href="index.html">Hem</a></li>
+      <li><a href="butik.php">Butik</a></li>
+      <li><a href="om.html">Om Kameleo</a></li>
+      <li class="active"><a href="kontakt.html">Kontakt</a></li>
+    </ul>
+  </nav>
+  <!-- NAV ENDS -->
+  <!-- HEADER BEGINS -->
+  <header>
+    <div class="header-container">
+      <h1>- KONTAKTA OSS -</h1>
+      <span class="quote">För pris, information eller bara säga hej!</span>
+    </div>
+  </header>
+  <!-- HEADER ENDS -->
+  <!-- MAIN BEGINS -->
+  <div class="container">
+    <div class="centered-text contact">
+      <form method="post" action="sendmail.php">
+        <h2>Information om dig</h2>
+        <p class="form-description">Intresserad av ett par hjul? Allmäna frågor? Eller vill du bara säga hej, nemen skriv!</p>
+        <p>Ditt namn: <span class="required">*</span> <br>
+        <input type="text" name="from" placeholder="t.ex. John Doe" required></p>
+        <p>E-post: <span class="required">*</span> <br>
+        <input type="email" name="email" placeholder="t.ex. namn@epost.se" required></p>
+        <p>Ämne: <br>
+        <input type="text" name="subject"></p>
+        <h2>Ditt ärende:</h2>
+        <p>Meddelande: <span class="required">*</span> <br>
+        <textarea name="message" rows="10" cols="40" required></textarea>
+        <input type="submit" value="Skicka" class="submitMsg">
+      </form>
+    </div>
+  </div>
+  <!-- MAIN ENDS -->
+  <!-- FOOTER BEGINS -->
+  <footer>
+    <div class="footer-container">
+      <div>
+        <h4>ANVÄNDBARA LÄNKAR</h4>
+        <ul>
+          <li><a href="index.html">Hem</a></li>
+          <li><a href="butik.php">Butik</a></li>
+          <li><a href="om.html">Om Kameleo</a></li>
+          <li><a href="kontakt.html">Kontakt</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>ADRESS</h4>
+        <ul>
+          <li>Kameleo AB</li>
+          <li>Påhittadväg 25</li>
+          <li>13412 Stockholm</li>
+          <li>Telefon: 01719101</li>
+          <li>e-post: kontakt@kameleo.se</li>
+        </ul>
+      </div>
+    </div>
+    <span class="copyright">
+      Copyright&#169; Kameleo AB 2017
+    </span>
+  </footer>
+  <!-- FOOTER ENDS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
